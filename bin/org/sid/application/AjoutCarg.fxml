@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.sid.application.AjouterCargaisonController">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="142.0">
+               <children>
+                  <Button fx:id="bt_accueil" layoutX="62.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonAccueilAction" text="Accueil" />
+                  <Button fx:id="bt_quit" layoutX="62.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleButtonQuitterAction" text="Quitter" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="77.0" layoutY="102.0" text="Référence">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="81.0" layoutY="141.0" text="Distance">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tf_ref" layoutX="201.0" layoutY="100.0" />
+                  <TextField fx:id="tf_dist" layoutX="201.0" layoutY="139.0" />
+                  <ComboBox fx:id="combo" layoutX="201.0" layoutY="178.0" prefWidth="150.0" />
+                  <Label layoutX="50.0" layoutY="180.0" text="Type de cargaison">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="bt_ajout" layoutX="201.0" layoutY="224.0" mnemonicParsing="false" onAction="#handleButtonAjouterAction" text="Ajouter" />
+                  <Label layoutX="112.0" layoutY="23.0" text="Ajouter une cargaison">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
